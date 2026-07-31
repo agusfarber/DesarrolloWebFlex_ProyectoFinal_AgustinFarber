@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eventos | El Caldero Chorreante — Club de lectura y trivia</title>
+    <meta
+      name="description"
+      content="Agenda de eventos en El Caldero Chorreante: club de lectura, noches de trivia mágica y talleres literarios en Buenos Aires."
+    />
+    <meta
+      name="keywords"
+      content="eventos café, club de lectura, trivia Harry Potter, talleres literarios, El Caldero Chorreante"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-caldero">
+        <div class="container">
+          <a class="navbar-brand" href="../index.html">El Caldero Chorreante</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navCaldero"
+            aria-controls="navCaldero"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navCaldero">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carta.html">Carta</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="eventos.html"
+                  >Eventos</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero" aria-labelledby="eventos-hero">
+        <h1 id="eventos-hero">Eventos</h1>
+        <p>
+          Noches para leer, competir y compartir mesa con otros fanáticos de las
+          historias.
+        </p>
+      </section>
+
+      <section class="section" aria-labelledby="agenda-title">
+        <div class="container-custom">
+          <h2 id="agenda-title" class="section__title">Próxima agenda</h2>
+          <p class="section__lead">
+            Cupos limitados. Reservá por correo o desde la página de contacto.
+          </p>
+          <div class="events-grid">
+            <article class="event-card" data-aos="fade-up">
+              <p class="event-card__meta">Jueves 20:00 · Mensual</p>
+              <h3>Club de lectura del Caldero</h3>
+              <p>
+                Cada mes elegimos una novela de fantasía o un clásico con alma
+                mágica. Incluye bebida de la casa y debate guiado. Agosto:
+                relectura libre de tu primer libro de la saga.
+              </p>
+              <a class="btn-outline-ink" href="contacto.html">Reservar lugar</a>
+            </article>
+            <article
+              class="event-card"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <p class="event-card__meta">Sábados 21:00 · Quincenal</p>
+              <h3>Noche de Trivia Mágica</h3>
+              <p>
+                Preguntas sobre el universo inspirador, cultura pop y datos
+                curiosos. Equipos de hasta 4 personas. El equipo ganador se
+                lleva postre y bragging rights.
+              </p>
+              <a class="btn-outline-ink" href="contacto.html">Anotar equipo</a>
+            </article>
+            <article
+              class="event-card"
+              data-aos="fade-up"
+              data-aos-delay="150"
+            >
+              <p class="event-card__meta">Domingo 17:00 · Mensual</p>
+              <h3>Taller de lettering encantado</h3>
+              <p>
+                Aprendé a escribir títulos al estilo de manuscritos antiguos.
+                Materiales incluidos. Ideal para principiantes.
+              </p>
+              <a class="btn-outline-ink" href="contacto.html">Inscribirme</a>
+            </article>
+            <article
+              class="event-card"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <p class="event-card__meta">Viernes 19:30 · Especial</p>
+              <h3>Cata de chocolates &amp; relatos</h3>
+              <p>
+                Tres chocolates de origen, tres cuentos cortos leídos en voz
+                alta. Una noche sensorial para cerrar la semana.
+              </p>
+              <a class="btn-outline-ink" href="contacto.html">Quiero ir</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--alt" aria-labelledby="privado-title">
+        <div class="container-custom" data-aos="fade-up">
+          <h2 id="privado-title" class="section__title">Eventos privados</h2>
+          <p class="section__lead">
+            Cumpleaños, despedidas de soltero/a temáticas o reuniones de club
+            de fans. Armamos menú cerrado y ambientación discreta.
+          </p>
+          <div class="cta-group" style="justify-content: center">
+            <a class="btn-primary-caldero" href="contacto.html"
+              >Consultar disponibilidad</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__brand">El Caldero Chorreante</p>
+      <nav class="site-footer__nav" aria-label="Enlaces del pie">
+        <a href="carta.html">Carta</a>
+        <a href="eventos.html">Eventos</a>
+        <a href="nosotros.html">Nosotros</a>
+        <a href="contacto.html">Contacto</a>
+      </nav>
+      <p class="site-footer__copy">
+        &copy; 2026 El Caldero Chorreante. Proyecto ficticio inspirado en el
+        universo mágico. Sitio de estudiante — no afiliado a Warner Bros. ni a
+        J.K. Rowling.
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 700, once: true, offset: 80 });
+    </script>
+  </body>
+</html>

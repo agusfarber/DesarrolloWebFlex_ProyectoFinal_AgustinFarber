@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>El Caldero Chorreante | Café-librería mágico en Buenos Aires</title>
+    <meta
+      name="description"
+      content="El Caldero Chorreante es un café-librería mágico en Buenos Aires. Café de especialidad, libros y eventos para fanáticos del mundo mágico."
+    />
+    <meta
+      name="keywords"
+      content="café mágico, librería temática, El Caldero Chorreante, Buenos Aires, café literario, Harry Potter inspirado"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg navbar-dark navbar-caldero">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">El Caldero Chorreante</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navCaldero"
+            aria-controls="navCaldero"
+            aria-expanded="false"
+            aria-label="Abrir menú de navegación"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navCaldero">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/carta.html">Carta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/eventos.html">Eventos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="pages/contacto.html">Contacto</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-home" aria-labelledby="brand-title">
+        <h1 id="brand-title" class="brand-title">El Caldero Chorreante</h1>
+        <p class="brand-tagline">
+          Café, libros y magia en el corazón de Buenos Aires. Un refugio para
+          quienes creen que toda gran historia empieza con una buena taza.
+        </p>
+        <div class="cta-group">
+          <a class="btn-primary-caldero" href="pages/carta.html">Ver la carta</a>
+          <a class="btn-secondary-caldero" href="pages/contacto.html"
+            >Reservar mesa</a
+          >
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="intro-title">
+        <div class="container-custom intro-grid">
+          <div data-aos="fade-right">
+            <h2 id="intro-title">Donde el café encuentra la magia</h2>
+            <p>
+              En El Caldero Chorreante combinamos granos de especialidad,
+              pastelería artesanal y una librería curada para viajar sin salir
+              de tu sillón. No somos un parque temático: somos un local real,
+              inspirado en la calidez de las tabernas del mundo mágico.
+            </p>
+            <a class="btn-outline-ink" href="pages/nosotros.html"
+              >Conocé nuestra historia</a
+            >
+          </div>
+          <figure data-aos="fade-left">
+            <img
+              class="intro-grid__img"
+              src="assets/images/interior-cafe.jpg"
+              width="800"
+              height="600"
+              alt="Interior cálido del café con estanterías de libros y mesas de madera"
+            />
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--alt" aria-labelledby="destacados-title">
+        <div class="container-custom">
+          <h2 id="destacados-title" class="section__title">Tres razones para visitarnos</h2>
+          <p class="section__lead">
+            Bebidas con nombre propio, rincones para leer y noches que no
+            olvidás.
+          </p>
+          <div class="feature-list">
+            <article class="feature-list__item" data-aos="fade-up">
+              <h3>Pociones de verdad</h3>
+              <p>
+                Lattes, chocolates espesos y tés infusionados con nombres
+                lúdicos… y sabor profesional.
+              </p>
+            </article>
+            <article
+              class="feature-list__item"
+              data-aos="fade-up"
+              data-aos-delay="100"
+            >
+              <h3>Librería viva</h3>
+              <p>
+                Fantasía, clásicos y novedades locales. Pedí una mesa junto a
+                los estantes y quedate a leer.
+              </p>
+            </article>
+            <article
+              class="feature-list__item"
+              data-aos="fade-up"
+              data-aos-delay="200"
+            >
+              <h3>Eventos semanales</h3>
+              <p>
+                Club de lectura, trivia mágica y talleres. Mirá la agenda y
+                sumate a la próxima noche.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="preview-carta">
+        <div class="container-custom">
+          <h2 id="preview-carta" class="section__title">De la carta</h2>
+          <p class="section__lead">
+            Una muestra de lo que hierve en nuestro caldero.
+          </p>
+          <div class="cards-grid">
+            <article class="card-caldero" data-aos="zoom-in">
+              <img
+                class="card-caldero__img"
+                src="assets/images/bebida-chocolate.jpg"
+                width="400"
+                height="300"
+                alt="Taza de chocolate caliente con crema y canela"
+              />
+              <h3 class="card-caldero__title">Chocolate Negro Absoluto</h3>
+              <p class="card-caldero__text">
+                Cacao 70%, crema batida y un toque de chili suave.
+              </p>
+              <p class="card-caldero__price">$4.800</p>
+            </article>
+            <article
+              class="card-caldero"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+            >
+              <img
+                class="card-caldero__img"
+                src="assets/images/pastel-tarta.jpg"
+                width="400"
+                height="300"
+                alt="Porción de tarta de manzana casera sobre plato de cerámica"
+              />
+              <h3 class="card-caldero__title">Tarta de la Abuela Weasley</h3>
+              <p class="card-caldero__text">
+                Manzana asada, masa quebrada y azúcar mascabo.
+              </p>
+              <p class="card-caldero__price">$3.900</p>
+            </article>
+            <article
+              class="card-caldero"
+              data-aos="zoom-in"
+              data-aos-delay="200"
+            >
+              <img
+                class="card-caldero__img"
+                src="assets/images/libros-estante.jpg"
+                width="400"
+                height="300"
+                alt="Estantería de madera llena de libros de fantasía"
+              />
+              <h3 class="card-caldero__title">Rincón de lectura</h3>
+              <p class="card-caldero__text">
+                Pedí tu bebida y elegí un libro de la casa. Primera hora libre.
+              </p>
+              <p class="card-caldero__price">Incluido</p>
+            </article>
+          </div>
+          <div class="cta-group" style="justify-content: center; margin-top: 2rem">
+            <a class="btn-primary-caldero" href="pages/carta.html"
+              >Ver carta completa</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p class="site-footer__brand">El Caldero Chorreante</p>
+      <nav class="site-footer__nav" aria-label="Enlaces del pie">
+        <a href="pages/carta.html">Carta</a>
+        <a href="pages/eventos.html">Eventos</a>
+        <a href="pages/nosotros.html">Nosotros</a>
+        <a href="pages/contacto.html">Contacto</a>
+      </nav>
+      <p class="site-footer__copy">
+        &copy; 2026 El Caldero Chorreante. Proyecto ficticio inspirado en el
+        universo mágico. Sitio de estudiante — no afiliado a Warner Bros. ni a
+        J.K. Rowling.
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({ duration: 700, once: true, offset: 80 });
+    </script>
+  </body>
+</html>
