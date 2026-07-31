@@ -1,0 +1,34 @@
+// Colores — taberna mágica (verde bosque, cobre, tinta)
+$color-forest: #1a3a2a;
+$color-forest-deep: #0f2419;
+$color-copper: #b87333;
+$color-gold: #c9a227;
+$color-ink: #1c1410;
+$color-parchment: #e8dfd0;
+$color-mist: #f3ece3;
+$color-cream: #faf6f0;
+$color-wood: #5c3d2e;
+$color-muted: #6b5e52;
+
+// Tipografías
+$font-display: "Cinzel Decorative", "Cinzel", serif;
+$font-heading: "Cinzel", serif;
+$font-body: "Source Sans 3", "Segoe UI", sans-serif;
+
+// Espaciados
+$space-xs: 0.5rem;
+$space-sm: 1rem;
+$space-md: 1.5rem;
+$space-lg: 2.5rem;
+$space-xl: 4rem;
+$space-xxl: 6rem;
+
+// Layout
+$max-width: 1120px;
+$radius-sm: 4px;
+$radius-md: 8px;
+$transition-base: 0.3s ease;
+
+// Breakpoints
+$bp-tablet: 768px;
+$bp-desktop: 1024px;

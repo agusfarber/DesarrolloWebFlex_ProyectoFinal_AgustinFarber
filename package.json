@@ -1,0 +1,19 @@
+{
+  "name": "el-caldero-chorreante",
+  "version": "1.0.0",
+  "description": "Sitio web de El Caldero Chorreante — café-librería mágico ficticio",
+  "scripts": {
+    "sass": "sass scss/main.scss styles/main.css",
+    "sass:watch": "sass --watch scss/main.scss:styles/main.css"
+  },
+  "keywords": [
+    "coderhouse",
+    "scss",
+    "bootstrap"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.102.0"
+  }
+}

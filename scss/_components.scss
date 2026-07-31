@@ -1,0 +1,243 @@
+@use "sass:color";
+@use "variables" as *;
+@use "mixins" as *;
+
+// Placeholders para @extend (mismo módulo)
+%btn-base {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-family: $font-heading;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-decoration: none;
+  text-align: center;
+  border-radius: $radius-sm;
+  cursor: pointer;
+}
+
+%card-base {
+  background-color: $color-cream;
+  border: 1px solid rgba($color-wood, 0.15);
+  border-radius: $radius-md;
+  padding: $space-md;
+  transition: transform $transition-base, box-shadow $transition-base;
+}
+
+// Botones
+.btn-primary-caldero {
+  @extend %btn-base;
+  @include button-style(
+    $color-copper,
+    $color-cream,
+    color.adjust($color-copper, $lightness: -8%)
+  );
+}
+
+.btn-secondary-caldero {
+  @extend %btn-base;
+  @include button-style(transparent, $color-gold, rgba($color-gold, 0.15));
+  border-color: $color-gold;
+  color: $color-gold;
+
+  &:hover,
+  &:focus {
+    color: $color-cream;
+    background-color: $color-copper;
+    border-color: $color-copper;
+  }
+}
+
+.btn-outline-ink {
+  @extend %btn-base;
+  @include button-style(transparent, $color-forest, $color-forest);
+  border-color: $color-forest;
+  color: $color-forest;
+
+  &:hover,
+  &:focus {
+    color: $color-cream;
+  }
+}
+
+// Cards
+.card-caldero {
+  @extend %card-base;
+  height: 100%;
+  @include flex-center(column, $space-sm);
+  align-items: flex-start;
+
+  &:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 28px rgba($color-ink, 0.12);
+  }
+
+  &__img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: $radius-sm;
+    margin-bottom: $space-xs;
+  }
+
+  &__title {
+    color: $color-forest;
+  }
+
+  &__text {
+    color: $color-muted;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+  }
+
+  &__price {
+    font-family: $font-heading;
+    color: $color-copper;
+    font-weight: 600;
+    margin-top: auto;
+  }
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: $space-md;
+}
+
+// CTA group
+.cta-group {
+  @include flex-center(row, $space-sm);
+  flex-wrap: wrap;
+  margin-top: $space-md;
+}
+
+// Feature list
+.feature-list {
+  display: grid;
+  gap: $space-md;
+  grid-template-columns: 1fr;
+
+  &__item {
+    @extend %card-base;
+    border-left: 4px solid $color-copper;
+
+    h3 {
+      color: $color-forest;
+    }
+  }
+}
+
+// Formulario
+.contact-form {
+  @extend %card-base;
+  max-width: 560px;
+  margin-inline: auto;
+
+  label {
+    display: block;
+    font-family: $font-heading;
+    font-size: 0.9rem;
+    margin-bottom: 0.35rem;
+    color: $color-forest;
+  }
+
+  input,
+  textarea,
+  select {
+    width: 100%;
+    padding: 0.65rem 0.85rem;
+    margin-bottom: $space-sm;
+    border: 1px solid rgba($color-wood, 0.3);
+    border-radius: $radius-sm;
+    font-family: $font-body;
+    font-size: 1rem;
+    background-color: $color-cream;
+    transition: border-color $transition-base, box-shadow $transition-base;
+
+    &:focus {
+      outline: none;
+      border-color: $color-copper;
+      box-shadow: 0 0 0 3px rgba($color-copper, 0.25);
+    }
+  }
+
+  textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+}
+
+.contact-info {
+  @extend %card-base;
+
+  h3 {
+    color: $color-forest;
+  }
+
+  p {
+    color: $color-muted;
+  }
+
+  &__item {
+    margin-bottom: $space-sm;
+
+    strong {
+      display: block;
+      font-family: $font-heading;
+      color: $color-forest-deep;
+      margin-bottom: 0.2rem;
+    }
+  }
+}
+
+// Team
+.team-grid {
+  display: grid;
+  gap: $space-md;
+  grid-template-columns: 1fr;
+}
+
+.team-card {
+  @extend %card-base;
+  text-align: center;
+  @include flex-center(column, $space-xs);
+
+  &__img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid $color-copper;
+  }
+
+  &__role {
+    font-size: 0.875rem;
+    color: $color-copper;
+    font-family: $font-heading;
+  }
+}
+
+// Event article
+.event-card {
+  @extend %card-base;
+  display: grid;
+  gap: $space-sm;
+
+  &__meta {
+    font-family: $font-heading;
+    font-size: 0.85rem;
+    color: $color-copper;
+    letter-spacing: 0.04em;
+  }
+}
+
+.menu-category {
+  margin-bottom: $space-xl;
+
+  &__title {
+    border-bottom: 2px solid $color-copper;
+    padding-bottom: $space-xs;
+    margin-bottom: $space-md;
+    display: inline-block;
+  }
+}

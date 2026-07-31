@@ -1,0 +1,89 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.page-hero {
+  @include section-padding($space-xl);
+  background: linear-gradient(
+      135deg,
+      rgba($color-forest-deep, 0.92),
+      rgba($color-wood, 0.85)
+    ),
+    url("../assets/images/hero-cafe.jpg") center / cover no-repeat;
+  color: $color-cream;
+  text-align: center;
+  min-height: 40vh;
+  @include flex-center(column, $space-sm);
+
+  h1 {
+    color: $color-gold;
+    font-family: $font-display;
+  }
+
+  p {
+    max-width: 36rem;
+    color: $color-parchment;
+    margin-bottom: 0;
+  }
+}
+
+.section {
+  @include section-padding;
+
+  &--alt {
+    background-color: $color-parchment;
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: $space-xs;
+  }
+
+  &__lead {
+    text-align: center;
+    max-width: 36rem;
+    margin-inline: auto;
+    margin-bottom: $space-lg;
+    color: $color-muted;
+  }
+}
+
+.site-footer {
+  background-color: $color-forest-deep;
+  color: $color-parchment;
+  padding-block: $space-lg;
+  text-align: center;
+
+  a {
+    color: $color-gold;
+
+    &:hover,
+    &:focus {
+      color: $color-cream;
+    }
+  }
+
+  &__brand {
+    font-family: $font-display;
+    font-size: 1.25rem;
+    color: $color-gold;
+    margin-bottom: $space-xs;
+  }
+
+  &__nav {
+    @include flex-center(row, $space-md);
+    flex-wrap: wrap;
+    margin-bottom: $space-sm;
+  }
+
+  &__copy {
+    font-size: 0.875rem;
+    color: rgba($color-parchment, 0.7);
+    margin-bottom: 0;
+  }
+}

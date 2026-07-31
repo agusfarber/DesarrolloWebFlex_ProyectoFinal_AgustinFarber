@@ -1,0 +1,80 @@
+@use "variables" as *;
+@use "mixins" as *;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-body;
+  font-size: 1rem;
+  line-height: 1.65;
+  color: $color-ink;
+  background-color: $color-mist;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: $color-copper;
+  text-decoration: none;
+  transition: color $transition-base;
+
+  &:hover,
+  &:focus {
+    color: $color-gold;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-heading;
+  font-weight: 600;
+  line-height: 1.25;
+  color: $color-forest-deep;
+}
+
+h1 {
+  font-family: $font-display;
+  font-size: clamp(2rem, 5vw, 3.25rem);
+}
+
+h2 {
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  margin-bottom: $space-sm;
+}
+
+h3 {
+  font-size: 1.25rem;
+  margin-bottom: $space-xs;
+}
+
+p {
+  margin-bottom: $space-sm;
+}
+
+ul {
+  list-style: none;
+}
+
+.container-custom {
+  width: 100%;
+  max-width: $max-width;
+  margin-inline: auto;
+  padding-inline: $space-sm;
+}

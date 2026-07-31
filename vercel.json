@@ -1,0 +1,6 @@
+{
+  "buildCommand": "npm run sass",
+  "outputDirectory": ".",
+  "framework": null,
+  "cleanUrls": false
+}
