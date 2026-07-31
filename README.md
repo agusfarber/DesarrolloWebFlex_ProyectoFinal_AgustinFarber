@@ -2,8 +2,6 @@
 
 Sitio web estático de un **café-librería mágico ficticio** inspirado en el universo de Harry Potter. Proyecto final del curso de Desarrollo Web (Coderhouse).
 
-> **Aviso:** Este es un proyecto académico de ficción. No está afiliado a Warner Bros., J.K. Rowling ni a ninguna marca oficial.
-
 ## Sitio en producción
 
 **Deploy (Vercel):** [https://desarrollo-web-flex-proyecto-final.vercel.app](https://desarrollo-web-flex-proyecto-final.vercel.app)
