@@ -6,6 +6,18 @@ Sitio web estático de un **café-librería mágico ficticio** inspirado en el u
 
 **Deploy (Vercel):** [https://desarrollo-web-flex-proyecto-final.vercel.app](https://desarrollo-web-flex-proyecto-final.vercel.app)
 
+## Capturas
+
+Inicio, carta, eventos y contacto.
+
+![Inicio de El Caldero Chorreante](docs/inicio.png)
+
+![Carta de bebidas](docs/carta.png)
+
+![Agenda de eventos](docs/eventos.png)
+
+![Formulario de contacto](docs/contacto.png)
+
 ## Páginas
 
 | Archivo | Descripción |
